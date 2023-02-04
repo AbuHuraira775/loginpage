@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@500;600&family=Source+Sans+Pro:wght@200&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+*{
+    font-family: 'Varela Round', sans-serif;
+    transition: 1s ease all;
+}
+body{
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+}
+.login{
+    flex:1;
+    border: 1px solid #3333;
+}
+.loginwrapper{
+    width: 70%;
+    margin: auto;
+    height: max-content;
+    margin-top: 5vw;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 1vw;
+    width: 80%;
+    margin: auto;
+}
+.header .logo{
+    display: flex;
+    justify-content: center;
+  
+}
+.logo h1{
+    display: flex;
+    align-self: center;
+    vertical-align:middle;
+    font-size: 2vw;
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headings h1 ,.headings p{
+    margin-top: 1vw;
+    text-align: center;
+}
+.headings p{
+    color: rgb(106, 102, 102);
+    margin-top: -1vw;
+    font-size: 1.4vw;
+}
+.body{
+    position: relative;
+    top: 3vw;
+}
+.box, .btn{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2.5vw;
+    display:flex;
+    border-radius: 45px;
+    height: 3.4vw;
+    padding-left: 1vw;
+    background-color: #fff;
+    box-shadow: 2px 2px 16px -2px rgba(0, 0, 0, .8);
+    
+}
+.box img{
+    margin-right: 1vw;
+    width: 4vw;
+}
+.box input{
+    width: inherit;
+    flex: 4;
+    border: none;
+    border-radius: 45px;
+    font-size: 1.6vw;
+}
+.remember .click{
+    background-color: red;
+    font-size: 5vw;
+}
+.box input:focus{
+    border: none;
+    outline: none;
+}
+.remember{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox{
+    display: flex;
+}
+.remember .forgot{
+    display: flex;
+    align-self: center;
+}
+.remember a{
+    text-decoration: none;
+    color: #1392d5;
+    font-weight: bold;
+}
+.btn{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    height: 1.4vw;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(45deg,#1392d5,#55d0ff) ;
+}
+.btn button{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-self: center;
+    font-size: 1.6vw;
+}
+.btn:hover{
+    background-image: linear-gradient(45deg,#55d0ff,#1392d5) ;
+
+}
+.btn img{
+    color: #fff;
+}
+.footer{
+    position: relative;
+    top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15px;
+}
+.footer p{
+    color: rgb(106, 102, 102);
+    font-size: 1.4vw;
+}
+.logos{
+    display: flex;
+    justify-items: center;
+}
+.logo1,.logo2{
+    padding-left:2vw ;
+    padding-right:2vw ;
+    padding: .4vw 4vw;
+    margin-bottom: 3vw;
+    border-radius: 45px;
+    height: 2vw;
+    object-fit:cover;
+}
+.logo1{
+    border: 3px solid #1976d2;
+}
+.logo2{
+    border: 3px solid #ef4235;
+}
+.logos img{
+    width: 2vw;
+}
+.image{
+    background-image: url(./images/back-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    flex: 1;
+}
+img{
+    width: 5vw;
+}
+span{
+    color: #1392d5;
+}
+@media(max-width:912px){
+    .remember{
+        font-size: 1.5vw;
+        margin-top: -1vw;
+        margin-bottom: 1vw;
+    }
+    .Login{
+        font-size: 3vw;
+    }
+}
+@media(max-width:540px){
+    
+    .header h1{
+        margin-bottom: 4vw;
+    }
+    .box{
+        height: 5.2vw;
+    }
+    .btn{
+        padding: .2vw 0;
+        margin-bottom: 4vw;
+    }
+    .logos img{
+        width: 3vw;
+    }
+    .logos .logo1,.logo2{
+        padding-bottom: 1.5vw;
+    }
+    .wrapper{
+        display: block;
+    }
+    .loginwrapper{
+        width: 50%;
+        margin-top: 15vw;
+    }
+    .image{
+        width: 60%;
+        height: 50vh;
+        margin: auto;
+    }
+}
+@media(max-width:440px){
+    .remember{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 3vw;
+    }
+    .box{
+        height: 6vw;
+    }
+    .checkbox{
+        margin: auto;
+    }
+    .btn{
+        margin-bottom: 5vw;
+    }
+}
+@media(max-width:370px){
+    .box,.btn{
+        margin-bottom: 4vw;
+    }
+    .logos img{
+        width: 4vw;
+    }
+    .footer {
+        margin-top: 4vw;
+    }
+    .logo1,.logo2 {
+        padding: .5vw 5vw 1.5vw 5vw;
+    }
+    .loginwrapper{
+        width: 70%;
+    }
+    body{
+        background-image: linear-gradient(45deg,#ACDDDE,#CAF1DE) ;
+   
+    }
+    .remember{
+        color: #333;
+    }
+    .logos img{
+        width: 4vw;
+        padding-bottom: 3vw;
+    }
+    .image{
+        background-image: none;
+    }
+}
